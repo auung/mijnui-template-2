@@ -1,8 +1,8 @@
 import clsx, { ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
- 
+
 export const cn = (...classes: ClassValue[]) => twMerge(clsx(classes))
- 
+
 /**
  * Conditionally applies CSS classes based on the `unstyled` flag.
  *
@@ -14,7 +14,7 @@ export const cn = (...classes: ClassValue[]) => twMerge(clsx(classes))
  * @param {string} [userClasses] - Additional user-defined CSS classes.
  * @returns {string | undefined} - The combined class names or only user-defined classes if `unstyled` is true.
  */
- 
+
 export const applyUnstyled = (
   unstyled: boolean | undefined,
   defaultClasses: string,

@@ -1,5 +1,3 @@
-'use client';
-
 import * as React from "react"
 import { UnstyledProps } from "@mijn-ui/types"
 import { applyUnstyled } from "@mijn-ui/utils"
@@ -70,7 +68,7 @@ const buttonStyles = cva(
         className:
           "hover:bg-danger hover:text-danger-filled-text border border-danger text-danger",
       },
- 
+
       {
         color: "primary",
         variant: "text",
@@ -97,7 +95,7 @@ const buttonStyles = cva(
         variant: "text",
         className: "hover:bg-neutral text-neutral-text",
       },
- 
+
       {
         color: "primary",
         variant: "filled",
@@ -132,56 +130,51 @@ const buttonStyles = cva(
     },
   },
 )
- 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+
+export type ButtonProps = React.ComponentPropsWithRef<"button"> &
   VariantProps<typeof buttonStyles> & {
     asChild?: boolean
     loading?: boolean
   } & UnstyledProps
- 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      unstyled,
-      className,
-      color,
-      variant,
-      size,
-      radius,
-      loading,
-      disabled,
-      asChild = false,
-      children,
-      ...props
-    },
-    ref,
-  ) => {
-    const Component = asChild ? Slot : "button"
- 
-    return (
-      <Component
-        className={applyUnstyled(
-          unstyled,
-          buttonStyles({ color, variant, size, radius }),
-          className,
-        )}
-        ref={ref}
-        disabled={loading || disabled}
-        {...props}
-      >
-        {loading && (
-          <LuLoader2
-            className={applyUnstyled(
-              unstyled,
-              "mr-2 h-5 w-5 animate-spin text-current",
-            )}
-          />
-        )}
-        <Slottable>{loading ? "Loading..." : children}</Slottable>
-      </Component>
-    )
-  },
-)
-Button.displayName = "Button"
- 
+
+const Button = ({
+  unstyled,
+  className,
+  color,
+  variant,
+  size,
+  radius,
+  loading,
+  disabled,
+  asChild = false,
+  children,
+  ref,
+  ...props
+}: ButtonProps) => {
+  const Component = asChild ? Slot : "button"
+
+  return (
+    <Component
+      className={applyUnstyled(
+        unstyled,
+        buttonStyles({ color, variant, size, radius }),
+        className,
+      )}
+      ref={ref}
+      disabled={loading || disabled}
+      {...props}
+    >
+      {loading && (
+        <LuLoader2
+          className={applyUnstyled(
+            unstyled,
+            "mr-2 h-5 w-5 animate-spin text-current",
+          )}
+        />
+      )}
+      <Slottable>{loading ? "Loading..." : children}</Slottable>
+    </Component>
+  )
+}
+
 export { Button, buttonStyles }

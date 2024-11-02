@@ -1,5 +1,5 @@
 "use client"
- 
+
 import * as React from "react"
 import {
   UnstyledProvider,
@@ -10,7 +10,7 @@ import { applyUnstyled } from "@mijn-ui/utils"
 import * as RadixAccordion from "@radix-ui/react-accordion"
 import { VariantProps, cva } from "class-variance-authority"
 import { LuChevronDown } from "react-icons/lu"
- 
+
 const accordionStyles = cva("[&>div]:border-b [&>div]:border-b-main-border", {
   variants: {
     variant: {
@@ -23,21 +23,22 @@ const accordionStyles = cva("[&>div]:border-b [&>div]:border-b-main-border", {
     variant: "default",
   },
 })
- 
+
 /* -------------------------------------------------------------------------- */
 /*                                  Accordion                                 */
 /* -------------------------------------------------------------------------- */
- 
-type AccordionProps = React.ComponentPropsWithoutRef<
-  typeof RadixAccordion.Root
-> &
+
+type AccordionProps = React.ComponentPropsWithRef<typeof RadixAccordion.Root> &
   VariantProps<typeof accordionStyles> &
   UnstyledProps
- 
-const Accordion = React.forwardRef<
-  React.ElementRef<typeof RadixAccordion.Root>,
-  AccordionProps
->(({ className, unstyled = false, variant, ...props }, ref) => (
+
+const Accordion = ({
+  className,
+  unstyled = false,
+  variant,
+  ref,
+  ...props
+}: AccordionProps) => (
   <UnstyledProvider unstyled={unstyled}>
     <RadixAccordion.Root
       ref={ref}
@@ -49,26 +50,26 @@ const Accordion = React.forwardRef<
       {...props}
     />
   </UnstyledProvider>
-))
- 
-Accordion.displayName = "Accordion"
- 
+)
+
 /* -------------------------------------------------------------------------- */
 /*                                AccordionItem                               */
 /* -------------------------------------------------------------------------- */
- 
-type AccordionItemProps = React.ComponentPropsWithoutRef<
+
+type AccordionItemProps = React.ComponentPropsWithRef<
   typeof RadixAccordion.Item
 > &
   UnstyledProps
- 
-const AccordionItem = React.forwardRef<
-  React.ElementRef<typeof RadixAccordion.Item>,
-  AccordionItemProps
->(({ className, unstyled, ...props }, ref) => {
+
+const AccordionItem = ({
+  className,
+  unstyled,
+  ref,
+  ...props
+}: AccordionItemProps) => {
   const { unstyled: contextUnstyled } = useUnstyled()
   const isUnstyled = unstyled ?? contextUnstyled
- 
+
   return (
     <RadixAccordion.Item
       ref={ref}
@@ -76,27 +77,30 @@ const AccordionItem = React.forwardRef<
       {...props}
     />
   )
-})
-AccordionItem.displayName = "AccordionItem"
- 
+}
+
 /* -------------------------------------------------------------------------- */
 /*                              AccordionTrigger                              */
 /* -------------------------------------------------------------------------- */
- 
-type AccordionTriggerProps = React.ComponentPropsWithoutRef<
+
+type AccordionTriggerProps = React.ComponentPropsWithRef<
   typeof RadixAccordion.Trigger
 > &
   UnstyledProps & {
     icon?: React.ReactNode
   }
- 
-const AccordionTrigger = React.forwardRef<
-  React.ElementRef<typeof RadixAccordion.Trigger>,
-  AccordionTriggerProps
->(({ className, icon, unstyled, children, ...props }, ref) => {
+
+const AccordionTrigger = ({
+  className,
+  icon,
+  unstyled,
+  children,
+  ref,
+  ...props
+}: AccordionTriggerProps) => {
   const { unstyled: contextUnstyled } = useUnstyled()
   const isUnstyled = unstyled ?? contextUnstyled
- 
+
   return (
     <RadixAccordion.Header className={applyUnstyled(isUnstyled, "flex")}>
       <RadixAccordion.Trigger
@@ -109,7 +113,7 @@ const AccordionTrigger = React.forwardRef<
         {...props}
       >
         {children}
- 
+
         {icon ? (
           icon
         ) : (
@@ -123,26 +127,27 @@ const AccordionTrigger = React.forwardRef<
       </RadixAccordion.Trigger>
     </RadixAccordion.Header>
   )
-})
- 
-AccordionTrigger.displayName = RadixAccordion.Trigger.displayName
- 
+}
+
 /* -------------------------------------------------------------------------- */
 /*                            AccordionContentProps                           */
 /* -------------------------------------------------------------------------- */
- 
-type AccordionContentProps = React.ComponentPropsWithoutRef<
+
+type AccordionContentProps = React.ComponentPropsWithRef<
   typeof RadixAccordion.Content
 > &
   UnstyledProps
- 
-const AccordionContent = React.forwardRef<
-  React.ElementRef<typeof RadixAccordion.Content>,
-  AccordionContentProps
->(({ className, unstyled, children, ...props }, ref) => {
+
+const AccordionContent = ({
+  className,
+  unstyled,
+  children,
+  ref,
+  ...props
+}: AccordionContentProps) => {
   const { unstyled: contextUnstyled } = useUnstyled()
   const isUnstyled = unstyled ?? contextUnstyled
- 
+
   return (
     <RadixAccordion.Content
       ref={ref}
@@ -157,8 +162,6 @@ const AccordionContent = React.forwardRef<
       </div>
     </RadixAccordion.Content>
   )
-})
- 
-AccordionContent.displayName = RadixAccordion.Content.displayName
- 
+}
+
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger }
