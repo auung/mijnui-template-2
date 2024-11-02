@@ -1,5 +1,5 @@
 import Container from "@/app/ui/utils/Container";
-import { Button } from "@mijn-ui/components/Button";
+import { Button } from "@mijn-ui/components/button";
 
 import { IconType } from "react-icons";
 import { BsNewspaper, BsSuitcaseLg } from "react-icons/bs";

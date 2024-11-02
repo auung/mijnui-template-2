@@ -1,18 +1,18 @@
 "use client";
 
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-import { Button } from "@mijn-ui/components/Button";
+import { Button } from "@mijn-ui/components/button";
 import Container from "@/app/ui/utils/Container";
-import { Input } from "@mijn-ui/components/Input";
-import { Label } from "@mijn-ui/components/Label";
+import { Input } from "@mijn-ui/components/input";
+import { Label } from "@mijn-ui/components/label";
 import { IconType } from "react-icons";
 import { FaReact, FaRegHeart, FaStar } from "react-icons/fa";
-import { ScrollArea, ScrollBar } from "@mijn-ui/components/ScrollArea";
+import { ScrollArea, ScrollBar } from "@mijn-ui/components/scroll-area";
 import {
 	Avatar,
 	AvatarFallback,
 	AvatarImage,
-} from "@mijn-ui/components/Avatar";
+} from "@mijn-ui/components/avatar";
 import { CiGlobe, CiMoneyBill, CiVideoOn } from "react-icons/ci";
 import { cn } from "@mijn-ui/utils";
 import { Dispatch, useState } from "react";
@@ -37,12 +37,17 @@ const Radio = ({
 	selectedCategory,
 	setSeletedCategory,
 }: RadioProps) => {
+	function handleRadioChange() {
+		setSeletedCategory(id);
+		console.log(id);
+	}
+
 	return (
 		<Label
 			htmlFor={id}
 			className={cn([
 				"flex gap-2 p-4 outline outline-0 outline-muted-text rounded-lg cursor-pointer",
-				selectedCategory === id ? "outline-2 bg-muted" : "",
+				selectedCategory == id ? "outline-2 bg-muted" : "",
 			])}
 		>
 			<Input
@@ -50,7 +55,7 @@ const Radio = ({
 				id={id}
 				name="ugc"
 				className="hidden"
-				onChange={() => setSeletedCategory(id)}
+				onChange={handleRadioChange}
 			/>
 			<div className="flex items-center">
 				<div className="min-w-12">
@@ -98,7 +103,7 @@ const Card = (props: CardType) => {
 				<span className="font-semibold">{ formatRating(props.rating) }</span>
 				<span>({ formatReviewCount(props.reviewCount) })</span>
 			</div>
-			<p className="font-semibold text-lg">From {props.price}</p>
+			<p className="font-semibold">From ${props.price}</p>
 		</div>
 	);
 };

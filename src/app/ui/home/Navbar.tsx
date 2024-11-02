@@ -1,7 +1,7 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@mijn-ui/components/Avatar";
-import { Button } from "@mijn-ui/components/Button";
+import { Avatar, AvatarFallback, AvatarImage } from "@mijn-ui/components/avatar";
+import { Button } from "@mijn-ui/components/button";
 import Container from "@/app/ui/utils/Container";
-import { Input } from "@mijn-ui/components/Input";
+import { Input } from "@mijn-ui/components/input";
 import { FaSearch } from "react-icons/fa";
 import { CiBellOn, CiHeart, CiMail } from "react-icons/ci";
 import { IconType } from "react-icons";
