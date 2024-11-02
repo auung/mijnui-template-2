@@ -1,0 +1,544 @@
+{
+  "gigs": [
+    {
+      "name": "Colleen Hicks",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "engaging social media ads",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.99,
+      "reviewCount": 2527,
+      "price": 32
+    },
+    {
+      "name": "Jamie Martinez",
+      "level": 3,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "professional logo design services",
+      "gigCategory": "Logo Design",
+      "rating": 4.86,
+      "reviewCount": 1272,
+      "price": 25
+    },
+    {
+      "name": "Douglas Johnson",
+      "level": 1,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "creative ugc content creation",
+      "gigCategory": "Website Development",
+      "rating": 4.72,
+      "reviewCount": 2641,
+      "price": 24
+    },
+    {
+      "name": "Jamie Garcia",
+      "level": 1,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg",
+        "alt": "Blue placeholder image"
+      },
+      "gigDescription": "custom business logo designs",
+      "gigCategory": "Social Media Marketing",
+      "rating": 4.08,
+      "reviewCount": 2638,
+      "price": 48
+    },
+    {
+      "name": "Heather Griffith",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "creative ugc content creation",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.98,
+      "reviewCount": 1624,
+      "price": 27
+    },
+    {
+      "name": "Joseph Roy",
+      "level": 1,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg",
+        "alt": "Blue placeholder image"
+      },
+      "gigDescription": "unique branding logo design",
+      "gigCategory": "Logo Design",
+      "rating": 4.9,
+      "reviewCount": 2500,
+      "price": 41
+    },
+    {
+      "name": "Arthur Russell",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "responsive website development",
+      "gigCategory": "Website Development",
+      "rating": 4.07,
+      "reviewCount": 1180,
+      "price": 47
+    },
+    {
+      "name": "Jasmine Hall",
+      "level": 2,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Blue placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "custom business logo designs",
+      "gigCategory": "Social Media Marketing",
+      "rating": 4.1,
+      "reviewCount": 2953,
+      "price": 39
+    },
+    {
+      "name": "Lori Henry",
+      "level": 3,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "A cute kitten"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "creative ugc content creation",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.12,
+      "reviewCount": 1790,
+      "price": 46
+    },
+    {
+      "name": "Thomas Lewis",
+      "level": 2,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Blue placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "gigDescription": "unique branding logo design",
+      "gigCategory": "Logo Design",
+      "rating": 4.94,
+      "reviewCount": 2946,
+      "price": 30
+    },
+    {
+      "name": "Lisa Wheeler",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Blue placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "gigDescription": "effective social media strategies",
+      "gigCategory": "Website Development",
+      "rating": 4.17,
+      "reviewCount": 1621,
+      "price": 45
+    },
+    {
+      "name": "Anthony Morrow",
+      "level": 2,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "seo-optimized websites",
+      "gigCategory": "Social Media Marketing",
+      "rating": 4.88,
+      "reviewCount": 2821,
+      "price": 38
+    },
+    {
+      "name": "David Gardner",
+      "level": 2,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "effective social media strategies",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.14,
+      "reviewCount": 1230,
+      "price": 50
+    },
+    {
+      "name": "Heidi Young",
+      "level": 1,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg",
+        "alt": "Blue placeholder image"
+      },
+      "gigDescription": "professional logo design services",
+      "gigCategory": "Logo Design",
+      "rating": 4.11,
+      "reviewCount": 2913,
+      "price": 50
+    },
+    {
+      "name": "Jessica Garcia",
+      "level": 1,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "A cute kitten"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "user-centric content creation",
+      "gigCategory": "Website Development",
+      "rating": 4.14,
+      "reviewCount": 2124,
+      "price": 32
+    },
+    {
+      "name": "Richard Shaw",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Blue placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg",
+        "alt": "Blue placeholder image"
+      },
+      "gigDescription": "custom business logo designs",
+      "gigCategory": "Social Media Marketing",
+      "rating": 4.12,
+      "reviewCount": 2664,
+      "price": 43
+    },
+    {
+      "name": "Sara Huff",
+      "level": 2,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "A cute kitten"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "gigDescription": "professional logo design services",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.53,
+      "reviewCount": 2162,
+      "price": 32
+    },
+    {
+      "name": "Joseph Marquez",
+      "level": 3,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "A cute kitten"
+      },
+      "avatarImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "gigDescription": "seo-optimized websites",
+      "gigCategory": "Logo Design",
+      "rating": 4.47,
+      "reviewCount": 2405,
+      "price": 20
+    },
+    {
+      "name": "Andrew Elliott",
+      "level": 3,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "seo-optimized websites",
+      "gigCategory": "Website Development",
+      "rating": 4.58,
+      "reviewCount": 2847,
+      "price": 28
+    },
+    {
+      "name": "Kelly Benson",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "effective social media strategies",
+      "gigCategory": "Social Media Marketing",
+      "rating": 4.16,
+      "reviewCount": 2004,
+      "price": 28
+    },
+    {
+      "name": "Kimberly Poole",
+      "level": 3,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "A cute kitten"
+      },
+      "avatarImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "gigDescription": "stunning social media management",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.02,
+      "reviewCount": 2739,
+      "price": 28
+    },
+    {
+      "name": "Kayla Mendoza",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "professional logo design services",
+      "gigCategory": "Logo Design",
+      "rating": 4.97,
+      "reviewCount": 1829,
+      "price": 20
+    },
+    {
+      "name": "Michael Alvarado",
+      "level": 3,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg",
+        "alt": "Blue placeholder image"
+      },
+      "gigDescription": "engaging social media ads",
+      "gigCategory": "Website Development",
+      "rating": 4.53,
+      "reviewCount": 1719,
+      "price": 45
+    },
+    {
+      "name": "Barbara Ramos",
+      "level": 1,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "gigDescription": "custom business logo designs",
+      "gigCategory": "Social Media Marketing",
+      "rating": 4.14,
+      "reviewCount": 2565,
+      "price": 20
+    },
+    {
+      "name": "Sarah Gutierrez",
+      "level": 3,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "unique branding logo design",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.81,
+      "reviewCount": 1066,
+      "price": 44
+    },
+    {
+      "name": "Tiffany Franklin",
+      "level": 2,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "unique branding logo design",
+      "gigCategory": "Logo Design",
+      "rating": 4.25,
+      "reviewCount": 2008,
+      "price": 23
+    },
+    {
+      "name": "Fernando Weaver DDS",
+      "level": 2,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "engaging social media ads",
+      "gigCategory": "Website Development",
+      "rating": 4.41,
+      "reviewCount": 1407,
+      "price": 50
+    },
+    {
+      "name": "Rachel Grant",
+      "level": 2,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Man profile"
+      },
+      "gigDescription": "engaging social media ads",
+      "gigCategory": "Social Media Marketing",
+      "rating": 4.39,
+      "reviewCount": 2384,
+      "price": 41
+    },
+    {
+      "name": "Margaret Avila",
+      "level": 1,
+      "isPro": true,
+      "coverImg": {
+        "src": "https://placebear.com/150/150",
+        "alt": "A bear in the wild"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Placeholder Image"
+      },
+      "gigDescription": "stunning social media management",
+      "gigCategory": "User Generated Content (UGC)",
+      "rating": 4.51,
+      "reviewCount": 2751,
+      "price": 28
+    },
+    {
+      "name": "Curtis Mcguire",
+      "level": 3,
+      "isPro": false,
+      "coverImg": {
+        "src": "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "A cute kitten"
+      },
+      "avatarImg": {
+        "src": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "People placeholder image"
+      },
+      "gigDescription": "user-centric content creation",
+      "gigCategory": "Logo Design",
+      "rating": 4.7,
+      "reviewCount": 1942,
+      "price": 36
+    }
+  ]
+}
