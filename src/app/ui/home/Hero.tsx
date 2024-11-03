@@ -21,15 +21,15 @@ const RecommendationCard = ({
 }: RecommendationCardProps) => {
 	return (
 		<div className="bg-surface rounded-xl w-full p-4 shadow-lg">
-			<p className="uppercase text-sm text-surface-text font-semibold">
+			<p className="uppercase text-xs text-neutral-text font-semibold tracking-wide">
 				{subtitle}
 			</p>
 			<div className="flex items-center gap-4 mt-2">
-				<div className="rounded-full bg-muted flex justify-center items-center w-12 h-12 overflow-hidden text-primary-text">
-					<Button asChild>
-						<Icon size={32} />
-					</Button>
-				</div>
+				<Button radius="full" color="accent" asChild className="pointer-events-none px-2">
+					<div>
+						<Icon size={24} />
+					</div>
+				</Button>
 				<div>
 					<p className="text-lg font-semibold">{title}</p>
 					<p>{description}</p>
@@ -38,7 +38,8 @@ const RecommendationCard = ({
 					radius="lg"
 					size="lg"
 					variant="outline"
-					className="ml-auto text-md"
+					className="ml-auto text-md border-2 text-main-text"
+					color="neutral"
 				>
 					{btnLabel}
 				</Button>

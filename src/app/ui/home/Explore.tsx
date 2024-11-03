@@ -21,6 +21,7 @@ import data from "public/data.json";
 import { formatName, formatRating, formatReviewCount, range } from "@/app/lib/utils";
 import { PiDiamond, PiDiamondFill } from "react-icons/pi";
 import { FaCircleCheck } from "react-icons/fa6";
+import { Badge } from "@mijn-ui/components/badge";
 
 type RadioProps = {
 	Icon: IconType;
@@ -112,14 +113,14 @@ const Level = ({ level, isPro }: { level: number, isPro: boolean }) => {
 	const maxLevel: number = 3;
 	if (isPro) {
 		return (
-			<div className="flex items-center gap-1 font-semibold py-1 px-2 bg-info rounded-md text-primary-text text-sm">
-				<FaCircleCheck size={12} />
+			<Badge radius={"md"} className="bg-info gap-1 text-sm pointer-events-none">
+				<FaCircleCheck size={14} />
 				Pro
-			</div>
+			</Badge>
 		);
 	} else {
 		return (
-			<div className={cn("flex gap-1.5 items-center", level === 3 ? "py-1 px-2 bg-secondary rounded-md" : "" )}>
+			<Badge radius={"md"} variant={level === 3 ? "filled" : "text"} color="secondary" className="pointer-events-none text-accent-text gap-1.5 px-2">
 				<p className="text-sm">
 					{ level < 3 ? `Level ${level}` : "Top Rated" }
 				</p>
@@ -127,8 +128,7 @@ const Level = ({ level, isPro }: { level: number, isPro: boolean }) => {
 					{ range(level).map(i => <PiDiamondFill key={i} size={12} />) }
 					{ range(maxLevel - level).map(i => <PiDiamond key={i} size={12} />) }
 				</div>
-			</div>
-	
+			</Badge>
 		);
 	}
 	
