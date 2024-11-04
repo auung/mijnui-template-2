@@ -1,31 +1,50 @@
+import { CiGlobe, CiMoneyBill, CiVideoOn } from "react-icons/ci";
+import { FaReact } from "react-icons/fa";
+
 enum LevelEnum {
 	one = 1,
 	two,
 	three,
 }
 
-export enum GigCategoryEnum {
-	ugc = "User Generated Content (UGC)",
-	logo = "Logo Design",
-	web = "Website Development",
-	social = "Social Media Marketing",
-}
+export const gigCategories = [
+	{
+		id: "ugc",
+		label: "User Generated Content (UGC)",
+		icon: CiVideoOn,
+	},
+	{
+		id: "logo",
+		label: "Logo Design",
+		icon: FaReact,
+	},
+	{
+		id: "web",
+		label: "Website Development",
+		icon: CiGlobe,
+	},
+	{
+		id: "social",
+		label: "Social Media Marketing",
+		icon: CiMoneyBill,
+	},
+];
 
-export type CardType = {
-	name: string,
-	level: LevelEnum,
-	isPro: boolean,
+export type GigType = {
+	name: string;
+	level: LevelEnum;
+	isPro: boolean;
 	coverImg: {
-		src: string,
-		alt: string
-	},
+		src: string;
+		alt: string;
+	};
 	avatarImg: {
-		src: string,
-		alt: string
-	},
-	gigDescription: string,
-	gigCategory: GigCategoryEnum,
-	rating: number,
-	reviewCount: number,
-	price: number,
-}
+		src: string;
+		alt: string;
+	};
+	gigDescription: string;
+	gigCategory: string;
+	rating: number;
+	reviewCount: number;
+	price: number;
+};
