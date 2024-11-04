@@ -1,5 +1,6 @@
 import Container from "@/app/ui/utils/Container";
 import { Button } from "@mijn-ui/components/button";
+import Image from "next/image";
 
 import { IconType } from "react-icons";
 import { BsNewspaper, BsSuitcaseLg } from "react-icons/bs";
@@ -20,12 +21,10 @@ const RecommendationCard = ({
 	btnLabel,
 }: RecommendationCardProps) => {
 	return (
-		<div className="bg-surface rounded-xl w-full p-4 shadow-lg">
-			<p className="uppercase text-xs text-neutral-text font-semibold tracking-wide">
-				{subtitle}
-			</p>
-			<div className="flex items-center gap-4 mt-2">
-				<Button radius="full" color="accent" asChild className="pointer-events-none px-2">
+		<div className="w-full rounded-xl bg-surface p-4 shadow-lg">
+			<p className="text-xs font-semibold uppercase tracking-wide text-neutral-text">{subtitle}</p>
+			<div className="mt-2 flex items-center gap-4">
+				<Button radius="full" color="accent" className="pointer-events-none px-2" asChild>
 					<div>
 						<Icon size={24} />
 					</div>
@@ -38,7 +37,7 @@ const RecommendationCard = ({
 					radius="lg"
 					size="lg"
 					variant="outline"
-					className="ml-auto text-md border-2 text-main-text"
+					className="text-md ml-auto border-2 text-main-text"
 					color="neutral"
 				>
 					{btnLabel}
@@ -50,17 +49,17 @@ const RecommendationCard = ({
 
 const Hero = () => {
 	return (
-		<div className="my-2 relative">
-			<img
+		<div className="relative my-2">
+			<Image
 				src="/assets/img/hero.jpg"
 				alt="hero-image"
-				className="w-full h-48 object-cover absolute top-0 left-0 -z-10"
+				className="absolute left-0 top-0 -z-10 h-48 w-full object-cover"
+				width={100}
+				height={100}
 			/>
-			<div className="w-11/12 mx-auto text-main flex justify-between pt-8 pb-12">
+			<div className="mx-auto flex w-11/12 justify-between pb-12 pt-8 text-main">
 				<h2 className="text-3xl font-semibold">Welcome to Freelancers, tony</h2>
-				<p className="text-lg font-semibold">
-					Made on Freelancers by Katarzyna
-				</p>
+				<p className="text-lg font-semibold">Made on Freelancers by Katarzyna</p>
 			</div>
 			<Container className="flex gap-6">
 				<RecommendationCard
