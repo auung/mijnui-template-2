@@ -1,72 +1,69 @@
-'use client';
+"use client";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@mijn-ui/components/avatar";
 import { Button } from "@mijn-ui/components/button";
 import Container from "@/app/ui/utils/Container";
 import { Input } from "@mijn-ui/components/input";
-import { FaBinoculars, FaSearch } from "react-icons/fa";
-import { CiBellOn, CiGlobe, CiHeart, CiMail } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
+import { CiBellOn, CiHeart, CiMail } from "react-icons/ci";
 import { IconType } from "react-icons";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Separator } from "@mijn-ui/components/separator";
-import {
-  Popover,
-  PopoverArrow,
-  PopoverClose,
-  PopoverContent,
-  PopoverTrigger,
-} from "@mijn-ui/components/popover"
-import { RxCross2 } from "react-icons/rx";
+import { Popover, PopoverArrow, PopoverContent, PopoverTrigger } from "@mijn-ui/components/popover";
 import { useState } from "react";
 import { cn } from "@mijn-ui/utils";
 import { GiBinoculars, GiHand } from "react-icons/gi";
 import { Badge } from "@mijn-ui/components/badge";
+import { profileList, subNavList } from "@/app/lib/definitions";
+import Link from "next/link";
 
-const NavLinkIcon = ({ Icon, url }: { Icon: IconType; url: string }) => {
-	return (
-		<a href={url}>
-			<Button
-				radius={"full"}
-				variant={"text"}
-				color={"accent"}
-				className="px-1.5"
-			>
-				<Icon size={28} />
-			</Button>
-		</a>
-	);
+type ProLinkProps = {
+	Icon: IconType;
+	title: string;
+	subtitle: string;
+	url: string;
 };
 
-const ProLink = ({ Icon, title, subtitle, url } : { Icon: IconType, title: string, subtitle: string, url: string}) => {
+const ProLink = ({ Icon, title, subtitle, url }: ProLinkProps) => {
 	return (
-		<Button variant={"outline"} color="neutral" size={"lg"} className="h-min w-full py-3 gap-4 pl-4" asChild>
-			<a href={url}>
+		<Button
+			variant={"outline"}
+			color="neutral"
+			size={"lg"}
+			className="h-min w-full gap-4 py-3 pl-4"
+			asChild
+		>
+			<Link href={url}>
 				<Icon size={72} />
 				<div className="text-left">
-					<h3 className="text-lg font-semibold">{ title }</h3>
-					<p className="text-neutral-text">{ subtitle }</p>
+					<h3 className="text-lg font-semibold">{title}</h3>
+					<p className="text-neutral-text">{subtitle}</p>
 				</div>
-			</a>
+			</Link>
 		</Button>
 	);
 };
 
-const ProfileLink = ({ url, text } : { url: string, text: string }) => {
+const NavLinkIcon = ({ Icon, url }: { Icon: IconType; url: string }) => {
 	return (
-		<a href={url}>{ text }</a>
+		<Button radius={"full"} variant={"text"} color={"accent"} className="px-1.5" asChild>
+			<Link href={url}>
+				<Icon size={28} />
+			</Link>
+		</Button>
 	);
-}
+};
 
 const Navbar = () => {
 	const [popupPro, setPopupPro] = useState(false);
 
 	return (
 		<nav>
-			<Container className="items-center justify-between py-4 gap-8 flex">
+			<Container className="flex items-center justify-between gap-8 py-4">
 				<h1 className="text-4xl font-bold">
 					<a href="#">Freelancers</a>
 				</h1>
-				<form action="#" className="flex gap-1 items-center grow">
+				<form action="#" className="flex grow items-center gap-1">
 					<Input
 						type="text"
 						className="w-full"
@@ -77,12 +74,18 @@ const Navbar = () => {
 						<FaSearch size={16} />
 					</Button>
 				</form>
-				<Popover unstyled={false} onOpenChange={open => setPopupPro(open)}>
+				<Popover unstyled={false} open={popupPro} onOpenChange={(open) => setPopupPro(open)}>
 					<PopoverTrigger className="bg-transparent text-accent-text hover:bg-accent">
 						<p className="pl-2">Fiverr Pro</p>
-						<MdKeyboardArrowDown size={24} className={cn("fill-mode-forwards ease-in-out", popupPro ? "animate-out spin-out-180" : "animate-in spin-in-90")} />
+						<MdKeyboardArrowDown
+							size={24}
+							className={cn(
+								"ease-in-out fill-mode-forwards",
+								popupPro ? "animate-out spin-out-180" : "animate-in spin-in-180",
+							)}
+						/>
 					</PopoverTrigger>
-					<PopoverContent className="relative w-96 preview" align="start">
+					<PopoverContent className="preview relative w-96" align="start">
 						<div className="flex flex-col gap-4">
 							<ProLink
 								Icon={GiBinoculars}
@@ -99,101 +102,67 @@ const Navbar = () => {
 						</div>
 					</PopoverContent>
 				</Popover>
-				<div className="flex gap-2 items-center">
+				<div className="flex items-center gap-2">
 					<NavLinkIcon Icon={CiBellOn} url="#" />
 					<NavLinkIcon Icon={CiMail} url="#" />
 					<NavLinkIcon Icon={CiHeart} url="#" />
 				</div>
 				<a href="#">Orders</a>
 				<Popover unstyled={false}>
-					<PopoverTrigger className="bg-transparent hover:bg-transparent p-0">
+					<PopoverTrigger className="bg-transparent p-0 hover:bg-transparent">
 						<Avatar size="md">
 							<AvatarImage src="/assets/img/profile.png" />
 							<AvatarFallback>A</AvatarFallback>
 						</Avatar>
 					</PopoverTrigger>
-					<PopoverContent className="relative w-72 preview" align="end">
-						<ul className="flex flex-col gap-3 text-neutral-text">
-							<li>
-								<a href="#">Profile</a>
-							</li>
-							<li>
-								<a href="#" className="flex gap-4">Post a project brief <Badge radius={"md"} className="bg-info hover:bg-info">Beta</Badge></a>
-							</li>
-							<li>
-								<a href="#">Your briefs</a>
-							</li>
-							<li>
-								<a href="#">Refer a Friend</a>
-							</li>
-							<Separator />
-							<li>
-								<a href="#">Become a Seller</a>
-							</li>
-							<li>
-								<a href="#">Settings</a>
-							</li>
-							<li>
-								<a href="#">Billings and payments</a>
-							</li>
-							<Separator />
-							<h5 className="font-semibold flex gap-4">Exclusive features <Badge radius={"md"} className="bg-info hover:bg-info">Pro</Badge></h5>
-							<li>
-								<a href="#">Invite your team</a>
-							</li>
-							<li>
-								<a href="#">Hire on an hourly basis</a>
-							</li>
-							<li>
-								<a href="#">Earn Freelancers credits</a>
-							</li>
-							<Separator />
-							<li>
-								<a href="#" className="flex gap-1 items-center">English <CiGlobe /></a>
-							</li>
-							<li>
-								<a href="#">$ USD</a>
-							</li>
-							<li>
-								<a href="#">Help & Support</a>
-							</li>
-							<Separator />
-							<li>
-								<a href="#">Logout</a>
-							</li>
+					<PopoverContent className="preview relative w-72" align="end">
+						<ul className="flex flex-col text-neutral-text">
+							{profileList.map(({ type, label, Icon, url, badge }, i) => {
+								if (type === "link" && url) {
+									return (
+										<li key={i}>
+											<Link
+												href={url}
+												className="flex items-center py-1.5 transition-colors hover:text-primary"
+											>
+												{label}
+												{Icon && <Icon className="ml-1" />}
+												{badge && (
+													<Badge radius={"md"} className="ml-4 bg-info hover:bg-info">
+														Beta
+													</Badge>
+												)}
+											</Link>
+										</li>
+									);
+								} else if (type === "heading") {
+									return (
+										<h5 className="flex pb-1.5 pt-2 font-semibold" key={i}>
+											{label}
+											{badge && (
+												<Badge radius={"md"} className="ml-4 bg-info hover:bg-info">
+													Pro
+												</Badge>
+											)}
+										</h5>
+									);
+								} else if (type === "separator") {
+									return <Separator className="my-1" key={i} />;
+								}
+							})}
 						</ul>
 						<PopoverArrow className="fill-neutral-text" />
 					</PopoverContent>
 				</Popover>
-					
 			</Container>
 			<Separator className="my-2" />
 			<Container>
-				<ul className="flex gap-6 text-md">
-					<li>
-						<a href="#">Graphic & Design</a>
-					</li>
-					<li>
-						<a href="#">Programming & Tech</a>
-					</li>
-					<li>
-						<a href="#">Digital Marketing</a>
-					</li>
-					<li>
-						<a href="#">Video & Animation</a>
-					</li>
-					<li>
-						<a href="#">Writing & Translation</a>
-					</li>
-					<li>
-						<a href="#">Business</a>
-					</li>
-					<li>
-						<a href="#">Finance</a>
-					</li>
-					<li>
-						<a href="#">AI Services</a>
-					</li>
+				<ul className="text-md flex gap-6">
+					{subNavList.map(({ label, url }, i) => (
+						<li key={i}>
+							<Link href={url}>{label}</Link>
+						</li>
+					))}
 				</ul>
 			</Container>
 		</nav>
