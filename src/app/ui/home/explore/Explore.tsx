@@ -5,14 +5,15 @@ import { Button } from "@mijn-ui/components/button";
 import { ScrollArea, ScrollBar } from "@mijn-ui/components/scroll-area";
 import { useState } from "react";
 import data from "public/data.json";
-import { GigType, gigCategories } from "@/app/lib/definitions";
+import { GigType } from "@/app/lib/definitions";
 import Container from "@/app/ui/utils/Container";
 import Link from "next/link";
 import Category from "./Category";
 import Gig from "./Gig";
+import { GIG_CATEGORIES } from "@/_constants/GIG_CATEGORIES";
 
 const Explore = () => {
-	const [selectedCategory, setSelectedCategory] = useState<string>(gigCategories[0].id);
+	const [selectedCategory, setSelectedCategory] = useState<string>(GIG_CATEGORIES[0].id);
 	const handleCategoryChange = (id: string) => {
 		setSelectedCategory(id);
 	};
@@ -35,7 +36,7 @@ const Explore = () => {
 			</div>
 			<div className="flex gap-4 py-4">
 				<div className="flex w-1/4 flex-col">
-					{gigCategories.map((category) => {
+					{GIG_CATEGORIES.map((category) => {
 						return (
 							<Category
 								key={category.id}

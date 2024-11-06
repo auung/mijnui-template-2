@@ -14,8 +14,8 @@ import { useState } from "react";
 import { cn } from "@mijn-ui/utils";
 import { GiBinoculars, GiHand } from "react-icons/gi";
 import { Badge } from "@mijn-ui/components/badge";
-import { profileList, subNavList } from "@/app/lib/definitions";
 import Link from "next/link";
+import { PROFILE_LINKS, SUB_NAV_LINKS } from "@/_constants/NAVBAR_DATA";
 
 type ProLinkProps = {
 	Icon: IconType;
@@ -117,7 +117,7 @@ const Navbar = () => {
 					</PopoverTrigger>
 					<PopoverContent className="preview relative w-72" align="end">
 						<ul className="flex flex-col text-neutral-text">
-							{profileList.map(({ type, label, Icon, url, badge }, i) => {
+							{PROFILE_LINKS.map(({ type, label, Icon, url, badge }, i) => {
 								if (type === "link" && url) {
 									return (
 										<li key={i}>
@@ -158,7 +158,7 @@ const Navbar = () => {
 			<Separator className="my-2" />
 			<Container>
 				<ul className="text-md flex gap-6">
-					{subNavList.map(({ label, url }, i) => (
+					{SUB_NAV_LINKS.map(({ label, url }, i) => (
 						<li key={i}>
 							<Link href={url}>{label}</Link>
 						</li>
